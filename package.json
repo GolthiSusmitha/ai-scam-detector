@@ -1,12 +1,20 @@
 {
-  "name": "scam-detector",
+  "name": "scam-detector-frontend",
   "version": "1.0.0",
-  "description": "AI Scholarship & Job Scam Detector – monorepo",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
   "scripts": {
-    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "dev:backend": "cd backend && npm run dev",
-    "dev:frontend": "cd frontend && npm start",
-    "build:frontend": "cd frontend && npm run build",
-    "start:backend": "cd backend && npm start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "proxy": "http://localhost:5000",
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   }
 }
